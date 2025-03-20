@@ -57,6 +57,7 @@ class CircularTimerViewModel: ObservableObject {
 
                     self.timerInterval -= self.timeStep
                     print("progress \(self.progress)")
+                    self.progress += self.stepProgress
                     return self.progress
                 }
             }
