@@ -63,7 +63,7 @@ struct CircularTimer: View {
                         .foregroundColor(Color(CGColor.fromHex(0xFF4f758b)))
                 }
                 .frame(width: proxy.size.width * 0.7, alignment: .center)
-                .rotationEffect(.degrees(90))
+                .rotationEffect(.degrees(-90))
                 .animation(.spring(), value: viewModel.progress)
                 .overlay(
                     Text(
