@@ -41,9 +41,8 @@ class CircularTimerViewModel: ObservableObject {
         self.timerInterval = interval * (1 - progress)
 
         timer = Timer.publish(every: timeStep, on: .main, in: .common).autoconnect()
-
-        Timer.publish(every: timeStep, on: .main, in: .default)
-            .autoconnect()
+        
+        timer
             .receive(on: DispatchQueue.main)
             .compactMap { [weak self] _ in
 
