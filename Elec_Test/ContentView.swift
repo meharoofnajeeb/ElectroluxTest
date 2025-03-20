@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var progress: Float = 0
-    @State var text: String = "TEST"
+    @State var text: String = "10"
     
     var body: some View {
         VStack {
