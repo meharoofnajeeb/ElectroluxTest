@@ -36,7 +36,7 @@ struct CircularProgressBar: View {
                 .stroke(style: StrokeStyle(lineWidth: 8.0, lineCap: .round, lineJoin: .round))
                 .foregroundColor(Color(0xFFe1ad01 as! CGColor))
                 .rotationEffect(Angle(degrees: 270.0))
-                .animation(.linear)
+                .animation(.linear, value: progress)
 
             Text(text)
                 .foregroundColor(Color(0xFF011e41 as! CGColor))
